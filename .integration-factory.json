@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "78258f9abc61745d740f9f1a5f9f4d296bf0a959380415d93ef87664fef8faee",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developer.air.inc/llms.txt"
+  ],
+  "id": "air-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Air MCP setup and connection checker",
+  "description": "Generate Air MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "air",
+  "appName": "Air",
+  "providerDocs": "https://developer.air.inc/llms.txt",
+  "providerWebsite": "https://air.inc/",
+  "authentication": {
+    "type": "custom_headers",
+    "requiredCredentialFields": [
+      "provider_header_credentials"
+    ],
+    "requiredHeaderNames": [
+      "x-api-key",
+      "x-air-workspace-id"
+    ],
+    "helpUrl": "https://developer.air.inc/docs/getting-started",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-air-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
