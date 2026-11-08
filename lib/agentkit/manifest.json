@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-air",
+      "description": "Connect AI agents to Air using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-air/SKILL.md": "212e9e181e686ba3e73f76c9f88ee2c2f4c9f4488ca408cf39d70fa08672ba7f"
+  }
+}

@@ -1,42 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "78258f9abc61745d740f9f1a5f9f4d296bf0a959380415d93ef87664fef8faee",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developer.air.inc/llms.txt"
-  ],
   "id": "air-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Air MCP setup and connection checker",
-  "description": "Generate Air MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Air for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-air-mcp",
+  "sourceRevision": "104a98a8e377f12f23291a9485b3c3d324d30e2a4cb269aa0b94f53d1d888461",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developer.air.inc/llms.txt"
+  ],
+  "utility": {
+    "problem": "Prepare Air and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "air",
   "appName": "Air",
-  "providerDocs": "https://developer.air.inc/llms.txt",
-  "providerWebsite": "https://air.inc/",
-  "authentication": {
-    "type": "custom_headers",
-    "requiredCredentialFields": [
-      "provider_header_credentials"
-    ],
-    "requiredHeaderNames": [
-      "x-api-key",
-      "x-air-workspace-id"
-    ],
-    "helpUrl": "https://developer.air.inc/docs/getting-started",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-air-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
